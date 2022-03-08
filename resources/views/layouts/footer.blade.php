@@ -9,7 +9,7 @@
       <div class="container pb-3">
           <div class="row ms-auto me-auto mt-5 pt-3">
             <div class="col-lg-12 justify-content-center d-flex">
-              <img src="{{asset('assets/img/logo.png')}}"  height="42px" alt="" style="widht:122px !important" srcset="">
+              <img src="{{asset('img/andalas.png')}}"  height="70px" alt="" style="widht:122px !important" srcset="">
             </div>
             <div class="col-lg-12 justify-content-center">
               <div class="row no-gutters" style="margin-top: 35px">

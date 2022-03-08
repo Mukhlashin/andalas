@@ -43,7 +43,9 @@
           </div>
           <div class="col-lg-6 mt-5" >
             <h1 style="font-size: 40px">{{  $product->name }}</h1>
-            <p style="color: #444444; font-size: 20px">Rp{{ number_format(($product->price), 0, '.', '.') }}</p>
+            <p style="color: #444444; font-size: 20px">${{ $product->price }} / pcs</p>
+            <p style="color: #444444; font-size: 20px">${{ $product->price2 }} / {{ $product->price2qty }} pcs</p>
+            <p style="color: #444444; font-size: 20px">${{ $product->price3 }} / {{ $product->price3qty }} pcs</p>
             <p class="mt-3" style="color: #444444; font-weight: 100; font-size: 19px; text-align: justify">{{ $product->description }}</p>
 
             <div class="row my-5 justify-content-center">
@@ -88,7 +90,7 @@
                                 <p style="font-size: 1.5rem">{{$product->name}}</p>
                               </div>
                               <div class="col-md-12 col-sm-12">
-                                <p>Rp{{ number_format(($product->price), 0, '.', '.') }}</p>
+                                <p>${{ number_format(($product->price), 0, '.', '.') }}</p>
                               </div>
                             </div> 
                           </div>

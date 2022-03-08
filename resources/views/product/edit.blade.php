@@ -48,17 +48,44 @@
             </div>
 
             <div class="row m-3">
-                
                 <div class="col-sm">
                     <label for="" class="col-sm-2 col-form-label">Price</label>
-                    <input type="text" name="price" class="form-control"  value="{{ $data->price}}">
+                    <input type="number" step="any" name="price" class="form-control"  value="{{ $data->price}}">
+                </div>
+            </div>
+
+            <div class="row m-3">
+                <div class="col-sm">
+                    <label for="" class="col-sm-2 col-form-label">Price 2</label>
+                    <input type="number" step="any" name="price2" class="form-control"  value="{{ $data->price2 }}">
+                </div>
+            </div>
+
+            <div class="row m-3">
+                <div class="col-sm">
+                    <label for="" class="col-sm-2 col-form-label">Price 2 per qty</label>
+                    <input type="number" name="price2qty" class="form-control"  value="{{ $data->price2qty }}">
+                </div>
+            </div>
+
+            <div class="row m-3">
+                <div class="col-sm">
+                    <label for="" class="col-sm-2 col-form-label">Price 3</label>
+                    <input type="number" step="any" name="price3" class="form-control"  value="{{ $data->price3 }}">
+                </div>
+            </div>
+
+            <div class="row m-3">
+                <div class="col-sm">
+                    <label for="" class="col-sm-2 col-form-label">Price 3 per qty</label>
+                    <input type="number" name="price3qty" class="form-control"  value="{{ $data->price3qty }}">
                 </div>
             </div>
 
             <div class="row m-3">              
                 <div class="col-sm">
                     <label for="" class="col-sm-2 col-form-label">Quantity</label>
-                    <input type="text" name="quantity" class="form-control"  value="{{ $data->quantity }}">
+                    <input type="number" name="quantity" class="form-control"  value="{{ $data->quantity }}">
                 </div>
             </div>
 

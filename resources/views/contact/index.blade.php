@@ -20,19 +20,19 @@
                 <a href="" class="button icon1"
                 ><i class="fas fa-map-marker-alt"></i></a>
                 <h3 class="heading4">Location</h3>
-                <p class="heading3">Jl. Rambutan No. 1D, Depok Jaya, Kec. Pancoran Mas, Kota Depok, Jawa Barat 16432</p>
+                <p class="heading3">11665 Fuqua ST Suite F 610 Houston, Texas 77034</p>
               </div>
               <div class="col-md-6 col-sm-6 contact_details">
                 <a href="" class="button icon1"
                 ><i class=""><i class="fas fa-mobile-alt"></i></i></a>
                 <h3 class="heading4">Call Us</h3>
-                <p class="heading3">+62 21 7726 6503</p>
+                <p class="heading3">+1 (713) 598 0728</p>
               </div>
               <div class="col-md-6 col-sm-6 contact_details" style=" margin-top: 60px;">
                 <a href="" class="button icon1"
                 ><i class="far fa-envelope"></i></i></a>
                 <h3 class="heading4">Write to Us</h3>
-                <p class="heading3">Tasanesia.id@gmail.com
+                <p class="heading3">admin@andalas.us
                </p>
               </div>
               <div class="col-md-6 col-sm-6 contact_details" style=" margin-top: 60px;">
@@ -42,6 +42,9 @@
                 <p class="heading3">Monday - Friday: 9am to 5pm
                 </p>
               </div>
+            </div>
+            <div class="row">
+              <i class="fa-brands fa-instagram"></i>
             </div>
           </div>
 

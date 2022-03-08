@@ -14,6 +14,9 @@ class Order extends Model
         'no_handphone',
         'name_product',
         'quantity_product',
+        'product_price',
+        'total_price',
+        'tax',
         'address_product',
         'description_product',
     ];

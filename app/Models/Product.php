@@ -15,9 +15,13 @@ class Product extends Model
         'name',
         'images',
         'price',
+        'price2',
+        'price2qty',
+        'price3',
+        'price3qty',
         'quantity',
         'description',
-        'status',     
+        'status',
     ];
     protected $with = ['category_sub'];
 

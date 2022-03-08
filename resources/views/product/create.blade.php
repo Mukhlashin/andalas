@@ -46,10 +46,22 @@
         <input type="file" name="images" id="images" class="form-control">
 
         <label for="" class="">Price Product</label>
-        <input type="text" name="price" id="price" class="form-control">
+        <input type="number" step="any" name="price" id="price" class="form-control">
+
+        <label for="" class="">Price 2</label>
+        <input type="number" step="any" name="price2" id="price" class="form-control">
+
+        <label for="" class="">Price 2 per qty</label>
+        <input type="number" name="price2qty" id="price" class="form-control">
+
+        <label for="" class="">Price 3</label>
+        <input type="number" step="any" name="price3" id="price" class="form-control">
+
+        <label for="" class="">Price 3 per qty</label>
+        <input type="number" name="price3qty" id="price" class="form-control">
 
         <label for="" class="">Quantity Product</label>
-        <input type="text" name="quantity" id="quantity" class="form-control">
+        <input type="number" name="quantity" id="quantity" class="form-control">
 
         <label for="" class="">Description Product</label>
         <input type="text" name="description" id="description" class="form-control">

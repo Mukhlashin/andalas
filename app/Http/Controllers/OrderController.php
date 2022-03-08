@@ -7,8 +7,10 @@ use App\Http\Requests\StoreOrderRequest;
 use App\Http\Requests\UpdateOrderRequest;
 use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Symfony\Component\HttpFoundation\Request;
 use RealRashid\SweetAlert\Facades\Alert;
+use Carbon\Carbon;
 
 class OrderController extends Controller
 {
@@ -47,12 +49,18 @@ class OrderController extends Controller
             'no_handphone' => $request->no_handphone,
             'name_product' => $request->name_product,
             'quantity_product' => $request->quantity_product,
+            'product_price' => $request->product_price,
+            'total_price' => $request->total_price,
+            'tax' => $request->tax,
             'address_product' => $request->address_product,
             'description_product' => $request->description_product,
         ]);
+
+        $date = Carbon::now()->toDateTimeString(); // Produces something like "2019-03-11 12:25:00"
+
         Alert::success('Success', 'Your order will we confirm 2x24, please check your email');
 
-        return redirect()->route('home.index');
+        return view('layouts.invoice', compact('request', 'date'));
     }
 
     /**

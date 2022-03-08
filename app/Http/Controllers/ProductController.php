@@ -59,6 +59,10 @@ class ProductController extends Controller
             'name' => $request->name,
             'images' => $image,
             'price' => $request->price,
+            'price2' => $request->price2,
+            'price2qty' => $request->price2qty,
+            'price3' => $request->price3,
+            'price3qty' => $request->price3qty,
             'quantity' => $request->quantity,
             'description' => $request->description,
             'status' => $request->status,
@@ -109,6 +113,10 @@ class ProductController extends Controller
 
             $product->name = $request->input('name');
             $product->price = $request->input('price');
+            $product->price2 = $request->input('price2');
+            $product->price2qty = $request->input('price2qty');
+            $product->price3 = $request->input('price3');
+            $product->price3qty = $request->input('price3qty');
             $product->quantity = $request->input('quantity');
             $product->description = $request->input('description');
             $product->status = $request->input('status');
@@ -116,6 +124,10 @@ class ProductController extends Controller
         } else {
             $product->name = $request->input('name');
             $product->price = $request->input('price');
+            $product->price2 = $request->input('price2');
+            $product->price2qty = $request->input('price2qty');
+            $product->price3 = $request->input('price3');
+            $product->price3qty = $request->input('price3qty');
             $product->quantity = $request->input('quantity');
             $product->description = $request->input('description');
             $product->status = $request->input('status');
@@ -146,6 +158,7 @@ class ProductController extends Controller
         $user = Auth::user();
         $allProduct = Product::all();
         $product = Product::where('id', $id)->first();
+        $productByID = Product::find($id);
         $category = Category::where('id', $product->category_id)->first();
         $subCategory = CategorySubs::where('id', $product->category_subs_id)->first();
         
@@ -155,6 +168,7 @@ class ProductController extends Controller
             'category' => $category,
             'subCategory' => $subCategory,
             'product' => $product,
+            'productByID' => $productByID,
         ];
 
         return view('testProduct', $data);

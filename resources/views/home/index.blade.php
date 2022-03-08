@@ -2,7 +2,7 @@
 
 @section('title', 'Home')
 
-@extends('layouts.default')  
+@extends('layouts.default')
 
 @section('content')
 
@@ -190,7 +190,7 @@
                           <p style="font-size: 2rem">{{$product->name}}</p>
                         </div>
                         <div class="col-md-12 col-sm-12">
-                          <p>Rp{{ number_format(($product->price), 0, '.', '.') }}</p>
+                          <p>${{ number_format(($product->price), 0, '.', '.') }}</p>
                         </div>
                       </div> 
                     </div>

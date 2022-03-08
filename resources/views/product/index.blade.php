@@ -105,6 +105,8 @@
           <th>Category</th>
           <th>Sub Category</th>
           <th>Price</th>
+          <th>Price 2</th>
+          <th>Price 3</th>
           <th>Quantity</th>
           <th>Status</th>
           <th>Description</th>
@@ -121,7 +123,9 @@
           <td>{{ $item->name }}</td>
           <td>{{ $item->category->name }} </td>
           <td>{{ $item->sub_category->name }} </td>
-          <td>{{ $item->price }}</td>
+          <td>${{ $item->price }}</td>
+          <td>${{ $item->price2}} / {{ $item->price2qty }}pcs</td>
+          <td>${{ $item->price }} / {{ $item->price3qty }}pcs</td>
           <td>{{ $item->quantity }}</td>
           <td>{{ $item->status }}</td>
           <td>{{ $item->description }}</td>
