@@ -1,6 +1,19 @@
 
 @extends('layouts.default')
 
+<style>
+    @media (max-width: 767.98px) 
+    {  .table2 {
+        width: 315px !important;
+    }
+    .container{
+        padding: 0px !important
+    }
+ }
+
+   
+</style>
+
 <div class="container" style="padding-left: 200px; padding-right: 200px;">
 <div class="card" style="padding: 10px">
   <div class="card-body">
@@ -35,7 +48,7 @@
         </div>
     </div>
     <hr>
-    <table class="table table-striped" style="border-collapse: collapse; min-width: 400px;">
+    <table class="table table-striped" style="border-collapse: collapse; min-width: 300px;">
         <thead>
             <tr>
                 <th style="font-size:16px">Item</th>
@@ -56,7 +69,7 @@
 
     <div class="row justify-content-end d-flex" style="margin-top: 45px;
     margin-right: 2px">
-        <table class="table table-striped" style="width: 40%">
+        <table class="table table-striped table2" style="width: 40%">
             <thead>
                 <tr>
                     <th style="font-size:16px; text-align: center">Invoice Summary</th>
